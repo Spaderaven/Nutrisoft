@@ -12,10 +12,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nutrisoft"
         mc:Ignorable="d"
-        Title="MainWindow" Height="523" Width="840" WindowState="Maximized" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="577" Width="932" WindowState="Normal" WindowStyle="None" AllowsTransparency="False" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid>
-            <Border  Background="Transparent">
+            <Border  Background="Transparent" MouseLeftButtonDown="Mover">
                 <materialDesign:ColorZone  Background="#81c41d">
                     <DockPanel HorizontalAlignment="Right">
                         <Button Height="40" Width="40" Padding="0" Background="#81c41d" Click="MinimizarVentana">
@@ -31,27 +31,35 @@
                 </materialDesign:ColorZone>
             </Border>
         </Grid>
-        <Grid>
-            <Grid Margin="0, 40">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Top"  Width="Auto">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+        
+            
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="40">
+                    <Menu Background="#a8ed42">
+                        <MenuItem Header="Evaluacion nutricional">
+                            <MenuItem Header="Historial del paciente"/>
+                            <MenuItem Header="Alimentacion">
+                                <MenuItem Header="Recordatorio 24h"></MenuItem>
+                                <MenuItem Header="Antecedentes dieteticos"></MenuItem>
+                            </MenuItem>
+                            <MenuItem Header="Medidas antropomórficas" />
+                            <MenuItem Header="Datos bioquimicos"/>
+                            <MenuItem Header="Hallazgos físicos"/>
+                        </MenuItem>
 
-                        <Button Content="Evaluacion Nutricional" Grid.Column="0" Margin="0,0,0,0" Background="#a8ed42"></Button>
-                        <Button Content="Diagnostico Nutricional" Grid.Column="1" Margin="0,0,0,0" Background="#a8ed42"></Button>
-                        <Button Content="Tratamiento Nutricional" Grid.Column="2" Margin="0,0,0,0" Background="#a8ed42"></Button>
-                        <Button Content="Expedientes" Grid.Column="3" Margin="0,0,0,0" Background="#a8ed42"></Button>
-                        <Button Content="Notificaciones" Grid.Column="4" Margin="0,0,0,0" Background="#a8ed42"></Button>
+                        <MenuItem Header="Diagnostico Nutricional"/>
 
-                    </Grid>
+                        <MenuItem Header="Tratamiento nutricional">
+                            <MenuItem Header="Requerimientos"/>
+                            <MenuItem Header="Distribucion"/>
+                            <MenuItem Header="Tiempos"/>
+                        </MenuItem>
+
+                        <MenuItem Header="Expedientes"/>
+                        <MenuItem Header="Notificaciones" HorizontalContentAlignment="Center" />
+                    </Menu>
                 </StackPanel>
+        <Grid Margin="0, 40">
             </Grid>
-        </Grid>
+        
     </Grid>
 </Window>

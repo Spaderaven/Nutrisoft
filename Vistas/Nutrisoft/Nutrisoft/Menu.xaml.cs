@@ -41,6 +41,11 @@ namespace Nutrisoft
             else
                 WindowState = System.Windows.WindowState.Maximized;
         }
+
+        private void Mover(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 
 }
