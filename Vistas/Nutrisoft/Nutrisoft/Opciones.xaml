@@ -47,15 +47,15 @@
         <TextBlock Style="{StaticResource Fuente}" x:Name="Titulo" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="N u t r i s o f t" VerticalAlignment="Top" FontSize="85" FontWeight="Normal" Width="342" Margin="278,10,280,0"/>
         <StackPanel Orientation="Horizontal">
             <Button Height="Auto"  HorizontalAlignment="Center" Margin="10 200">
-                <Image Source="C:\Users\Ivan\Desktop\Imagenes de fondo\paciente.png" Width="188" Height="200"/>
+                <Image Source="Imagenes\paciente.png" Width="188" Height="200"/>
             </Button>
 
             <Button Height="Auto" HorizontalAlignment="Left" Margin="80 200">
-                <Image Source="C:\Users\Ivan\Desktop\Imagenes de fondo\DIETA.png" Width="214" Height="190"/>
+                <Image Source="Imagenes\DIETA.png" Width="214" Height="190"/>
             </Button>
 
             <Button Height="Auto"  HorizontalAlignment="Right" Margin="30 200">
-                <Image Source="C:\Users\Ivan\Desktop\Imagenes de fondo\cita.png" Width="188" Height="200"/>
+                <Image Source="Imagenes\cita.png" Width="188" Height="200"/>
             </Button>
 
         </StackPanel>
