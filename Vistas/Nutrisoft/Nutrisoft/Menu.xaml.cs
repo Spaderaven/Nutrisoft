@@ -46,6 +46,72 @@ namespace Nutrisoft
         {
             DragMove();
         }
+
+        //Aqui se asignaran al evento de click las respectivas paginas de cada vista
+        private void HistorialPaciente(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new HistorialPaciente();
+        }
+
+        private void Alimentacion(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Recordatorio24h(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AntecedentesDieteticos(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MedidasAntropometricas(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DatosBioquimicos(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HallazgosFisicos(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DiagnosticoNutricional(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Requerimientos(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Distribucion(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tiempos(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Expedientes(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Notificaciones(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
 }
